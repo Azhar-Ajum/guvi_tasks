@@ -1,0 +1,17 @@
+Question  :Find the product with a row id of 10
+
+
+Query  : db.getCollection('product').find({ id: '10' });
+
+Result 
+
+[{
+  "_id": {
+    "$oid": "66502b4e61888836e5f2fb42"
+  },
+  "id": "10",
+  "product_name": "Generic Wooden Pizza",
+  "product_price": 84,
+  "product_material": "Frozen",
+  "product_color": "indigo"
+}]

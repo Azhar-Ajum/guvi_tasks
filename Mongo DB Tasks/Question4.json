@@ -1,0 +1,40 @@
+Question : List the four product which are greater than 500 in price
+
+
+Query : db.getCollection('product')
+  .find({ product_price: { $gt: 500 } })
+  .limit(4);
+
+
+Result :
+
+[{
+  "_id": {
+    "$oid": "66502b4e61888836e5f2fb39"
+  },
+  "id": "1",
+  "product_name": "Intelligent Fresh Chips",
+  "product_price": 655,
+  "product_material": "Concrete",
+  "product_color": "mint green"
+},
+{
+  "_id": {
+    "$oid": "66502b4e61888836e5f2fb3a"
+  },
+  "id": "2",
+  "product_name": "Practical Fresh Sausages",
+  "product_price": 911,
+  "product_material": "Cotton",
+  "product_color": "indigo"
+},
+{
+  "_id": {
+    "$oid": "66502b4e61888836e5f2fb3b"
+  },
+  "id": "3",
+  "product_name": "Refined Steel Car",
+  "product_price": 690,
+  "product_material": "Rubber",
+  "product_color": "gold"
+}]
